@@ -1,0 +1,39 @@
+.card {
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+}
+
+.card__image {
+  width: 282px;
+  height: 282px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 25px 20px;
+}
+
+.card__title {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 900;
+}
+
+.card__button {
+  border: none;
+  background-color: #fff;
+}
+
+.card__button_type_heart {
+  width: 21px;
+  height: 18px;
+}
