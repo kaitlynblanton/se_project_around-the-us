@@ -32,7 +32,7 @@
   transition: font-size 0.75s ease;
 }
 
-.profile__buttons {
+.profile__button {
   grid-area: button;
   box-sizing: border-box;
   background-color: #000;
@@ -42,7 +42,17 @@
   transition: opacity 0.75s ease-in-out;
 }
 
-.profile__buttons:hover {
+.profile__button:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.profile__button-position {
+  margin-left: auto;
+  transition: opacity 1s ease-in;
+}
+
+.profile__button-position:hover {
   opacity: 60%;
   cursor: pointer;
 }
@@ -56,16 +66,6 @@
 .profile__image_type_edit {
   width: 10px;
   height: 10px;
-}
-
-.profile__button {
-  margin-left: auto;
-  transition: opacity 1s ease;
-}
-
-.profile__button:hover {
-  opacity: 60%;
-  cursor: pointer;
 }
 
 .profile__button_type_add {
@@ -125,6 +125,10 @@
     margin: 0;
   }
 
+  .profile__button-position {
+    margin: 0;
+  }
+
   .profile__button_type_edit {
     width: 18px;
     height: 18px;
@@ -135,10 +139,6 @@
     width: 7.5px;
     height: 7.5px;
     padding: 2.5px;
-  }
-
-  .profile__button {
-    margin: 0;
   }
 
   .profile__button_type_add {
