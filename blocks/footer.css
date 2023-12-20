@@ -1,0 +1,12 @@
+.footer {
+  margin: 67px auto 60px 0;
+}
+
+.footer__copyright {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: rgba(84, 84, 84, 1);
+  max-width: 318px;
+  margin: 0;
+}
