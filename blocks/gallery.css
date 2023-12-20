@@ -4,8 +4,10 @@
 
 .gallery__cards {
   list-style-type: none;
+  margin: 0 auto;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 282px);
+  grid-template-columns: repeat(auto-fit, 282px);
+  justify-content: center;
   grid-gap: 20px 17px;
 }

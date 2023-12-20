@@ -2,7 +2,6 @@
   display: flex;
   margin: 40px 0 51px;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .profile__avatar {
@@ -21,6 +20,7 @@
   margin: 0 0 0 30px;
   align-items: center;
   min-width: 415px;
+  transition: min-width 0.75s ease;
 }
 
 .profile__title {
@@ -28,27 +28,55 @@
   font-weight: 500;
   font-size: 42px;
   line-height: 1.14;
-  margin: 0 0 7px;
+  margin: 0;
+  transition: font-size 0.75s ease;
 }
 
-.profile__button {
+.profile__buttons {
   grid-area: button;
+  box-sizing: border-box;
   background-color: #000;
-  border: none;
+  border: 1.5px solid #fff;
+  margin: 0 0 0 10px;
   padding: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.profile__buttons:hover {
+  opacity: 60%;
+  cursor: pointer;
 }
 
 .profile__button_type_edit {
-  box-sizing: border-box;
   width: 24px;
   height: 24px;
   justify-self: end;
-  transition: opacity 0.65s ease-in-out;
 }
 
-.profile__button_type_edit:hover {
+.profile__image_type_edit {
+  width: 10px;
+  height: 10px;
+}
+
+.profile__button {
+  margin-left: auto;
+  transition: opacity 1s ease;
+}
+
+.profile__button:hover {
   opacity: 60%;
   cursor: pointer;
+}
+
+.profile__button_type_add {
+  height: 50px;
+  width: 150px;
+  transition: width 0.5s ease;
+}
+
+.profile__image_type_add {
+  width: 22px;
+  height: 22px;
 }
 
 .profile__description {
@@ -56,16 +84,69 @@
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
-  margin: 0;
+  margin: 7px 0 0;
 }
 
-.profile__button_type_add {
-  height: 50px;
-  margin-left: auto;
-  transition: opacity 0.75s ease-in-out;
+@media screen and (max-width: 790px) {
+  .profile__info {
+    min-width: 282px;
+  }
+
+  .profile__title {
+    font-size: 32px;
+    line-height: 1.21;
+  }
+
+  .profile__button_type_add {
+    width: 50px;
+  }
 }
 
-.profile__button_type_add:hover {
-  opacity: 60%;
-  cursor: pointer;
+@media screen and (max-width: 635px) {
+  .profile {
+    flex-direction: column;
+    margin: 40px 0 36px;
+  }
+
+  .profile__avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 0 30px;
+  }
+
+  .profile__info {
+    justify-items: center;
+    margin: 0;
+  }
+
+  .profile__title {
+    font-size: 22px;
+    justify-self: end;
+    margin: 0;
+  }
+
+  .profile__button_type_edit {
+    width: 18px;
+    height: 18px;
+    justify-self: start;
+  }
+
+  .profile__image_type_edit {
+    width: 7.5px;
+    height: 7.5px;
+    padding: 2.5px;
+  }
+
+  .profile__button {
+    margin: 0;
+  }
+
+  .profile__button_type_add {
+    width: 282px;
+    margin: 0;
+  }
+
+  .profile__description {
+    margin: 14px 0 36px;
+  }
 }
