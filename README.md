@@ -16,7 +16,7 @@ By using <code>flexgrid</code>, the elements are displayed correctly across diff
 - Flat BEM file structure
 - Flexgrid
 
-### Plans for improving the project
+### Plans for Improvement
 
 - Improve interactivity of the website by adding the ability to edit the profile, add your own post, and like existing posts.
 - Improve usability of the website by allowing users to add a small description of their destination.
@@ -25,3 +25,5 @@ By using <code>flexgrid</code>, the elements are displayed correctly across diff
 ### Live Link
 
 🔗 https://kaitlynblanton.github.io/se_project_around-the-us/
+
+### Project Demo Video

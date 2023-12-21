@@ -1,12 +1,23 @@
 .footer {
-  margin: 67px auto 60px 20px;
+  margin: 67px auto 60px 0;
 }
 
 .footer__copyright {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.21;
   color: rgba(84, 84, 84, 1);
   max-width: 318px;
   margin: 0;
+  transition: font-size 0.75s ease;
+}
+
+@media screen and (max-width: 635px) {
+  .footer {
+    margin: 42px auto 36px 20px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+  }
 }

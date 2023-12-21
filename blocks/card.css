@@ -11,6 +11,7 @@
   width: 282px;
   height: 282px;
   border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
 
 .card__info {
@@ -26,20 +27,24 @@
   white-space: nowrap;
   overflow: hidden;
   font-weight: 900;
+  font-size: 24px;
+  line-height: 1.21;
 }
 
 .card__button {
   border: none;
   background-color: #fff;
+  padding: 0;
 }
 
-.card__button_type_heart {
+.card__heart-image {
   width: 21px;
   height: 18px;
   transition: opacity 0.5s ease-in-out;
+  padding: 7px 0 4px 2px;
 }
 
-.card__button_type_heart:hover {
+.card__heart-image:hover {
   opacity: 50%;
   cursor: pointer;
 }

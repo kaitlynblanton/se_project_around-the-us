@@ -23,14 +23,14 @@
 
 @media screen and (max-width: 920px) {
   .page__content {
-    margin: 0 20px;
+    margin: 0 20px 0;
     max-width: calc(100% - 40px);
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 635px) {
   .page__content {
-    margin: 0 auto 0;
-    max-width: calc(100% - 38px);
+    margin: 0;
+    max-width: 100%;
   }
 }
