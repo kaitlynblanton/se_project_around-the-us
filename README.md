@@ -22,8 +22,6 @@ By using <code>flexgrid</code>, the elements are displayed correctly across diff
 - Improve usability of the website by allowing users to add a small description of their destination.
 - Improve accessiblity by allowing a user to switch between light and dark mode.
 
-### Live Link
+### 🔗 [Live Link](https://kaitlynblanton.github.io/se_project_around-the-us/)
 
-🔗 https://kaitlynblanton.github.io/se_project_around-the-us/
-
-### Project Demo Video
+### 🔗 [Project Demo Video](https://drive.google.com/file/d/10LuiyFQLNeah_9itqxL4C4QUcGYZUksz/view?usp=drive_link)
