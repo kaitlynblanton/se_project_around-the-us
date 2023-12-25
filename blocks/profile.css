@@ -35,7 +35,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 375px;
 }
 
 .profile__button {
@@ -118,7 +117,7 @@
 @media screen and (max-width: 635px) {
   .profile {
     flex-direction: column;
-    margin: 40px 0 36px;
+    margin: 40px 20px 36px;
   }
 
   .profile__avatar {
@@ -133,6 +132,7 @@
   .profile__title {
     font-size: 22px;
     justify-self: end;
+    max-width: 249px;
   }
 
   .profile__button-position {
@@ -158,5 +158,6 @@
   .profile__description {
     font-size: 14px;
     margin: 14px 0 36px;
+    max-width: 282px;
   }
 }

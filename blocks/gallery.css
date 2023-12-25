@@ -11,3 +11,9 @@
   justify-content: center;
   grid-gap: 20px 17px;
 }
+
+@media screen and (max-width: 635px) {
+  .gallery {
+    margin: 0 20px 0;
+  }
+}

@@ -24,4 +24,4 @@ By using <code>flexgrid</code>, the elements are displayed correctly across diff
 
 ### 🔗 [Live Link](https://kaitlynblanton.github.io/se_project_around-the-us/)
 
-### 🔗 [Project Demo Video](https://drive.google.com/file/d/10LuiyFQLNeah_9itqxL4C4QUcGYZUksz/view?usp=drive_link)
+### 🔗 [Project Demo Video](https://drive.google.com/file/d/10LuiyFQLNeah_9itqxL4C4QUcGYZUksz/view?usp=sharing)
