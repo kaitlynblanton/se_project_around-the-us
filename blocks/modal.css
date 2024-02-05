@@ -35,7 +35,16 @@
   background-size: contain;
   width: 40px;
   height: 40px;
+  transition: opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
+
+.modal__close:hover {
+  opacity: 80%;
+  transform: rotate(-45deg);
+}
+
 .modal__title {
   color: #000;
   font-weight: 900;
@@ -50,16 +59,19 @@
 }
 
 .modal__fieldset {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  margin: 0;
+  margin-bottom: 29.75px;
   border: none;
   padding: 0;
   margin: 0 0 30px;
-  padding: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .modal__fieldset:last-child {
   margin: 0;
-  border: none;
 }
 
 .modal__label {
@@ -67,10 +79,30 @@
 
 .modal__input {
   border: none;
+  width: 100%;
+  padding: 0 0 13.26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .modal__button {
+  margin: 48px 0 0;
+  width: 100%;
+  border: none;
+  background-color: #000;
+  color: white;
+  height: 50.15px;
+  padding: 0;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.21;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-.modal__button {
+.modal__button:hover {
+  opacity: 80%;
 }
