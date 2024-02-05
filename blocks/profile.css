@@ -22,7 +22,7 @@
   align-items: center;
   max-width: 415px;
   width: 100%;
-  transition: min-width 0.75s ease;
+  transition: min-width 0.5s ease;
 }
 
 .profile__title {
@@ -31,7 +31,7 @@
   font-size: 42px;
   line-height: 1.14;
   margin: 0;
-  transition: font-size 0.75s ease;
+  transition: font-size 0.5s ease;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -44,7 +44,7 @@
   border: 1.5px solid #fff;
   margin: 0 0 0 10px;
   padding: 0;
-  transition: opacity 0.75s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .profile__button:hover {
