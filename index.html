@@ -33,7 +33,7 @@
           />
 
           <div class="profile__info">
-            <h1 class="profile__title">Jacques Cousteau</h1>
+            <h1 class="profile__name js-profile-name">Jacques Cousteau</h1>
             <button
               aria-label="edit profile information"
               type="button"
@@ -45,7 +45,7 @@
                 class="profile__image profile__image_type_edit"
               />
             </button>
-            <p class="profile__description">Explorer</p>
+            <p class="profile__description js-profile-description">Explorer</p>
           </div>
 
           <div class="profile__button-position">
@@ -206,10 +206,12 @@
 
       <div class="modal js-edit-profile-modal">
         <div class="modal__container">
-          <button class="modal__close js-profile-close-button"></button>
+          <button
+            class="modal__button modal__button_type_close js-profile-close-button"
+          ></button>
           <p class="modal__title">Edit profile</p>
 
-          <form action="#" class="modal__form">
+          <form action="#" class="modal__form js-modal-form">
             <fieldset class="modal__fieldset">
               <label for="full-name" class="modal__label"></label>
               <input
@@ -217,7 +219,7 @@
                 id="full-name"
                 name="full-name"
                 placeholder="Name"
-                class="modal__input"
+                class="modal__input js-modal-input-name"
                 required
               />
             </fieldset>
@@ -229,13 +231,18 @@
                 id="description"
                 name="description"
                 placeholder="Description"
-                class="modal__input"
+                class="modal__input js-modal-input-description"
                 required
               />
             </fieldset>
 
             <fieldset class="modal__fieldset">
-              <button type="submit" class="modal__button">Save</button>
+              <button
+                type="submit"
+                class="modal__button modal__button_type_submit js-profile-submit-button"
+              >
+                Save
+              </button>
             </fieldset>
           </form>
         </div>

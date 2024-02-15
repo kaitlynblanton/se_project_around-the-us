@@ -25,7 +25,7 @@
   transition: min-width 0.5s ease;
 }
 
-.profile__title {
+.profile__name {
   grid-area: title;
   font-weight: 500;
   font-size: 42px;
@@ -100,7 +100,7 @@
     max-width: 343px;
   }
 
-  .profile__title {
+  .profile__name {
     font-size: 32px;
     line-height: 1.21;
   }
@@ -129,7 +129,7 @@
     margin: 0;
   }
 
-  .profile__title {
+  .profile__name {
     font-size: 22px;
     justify-self: end;
     max-width: 249px;
