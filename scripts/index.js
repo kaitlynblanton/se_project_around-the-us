@@ -34,7 +34,7 @@ const initialCards = [
 
 const profileEditButton = document.querySelector(".js-profile-edit-button");
 const profileEditModal = document.querySelector(".js-edit-profile-modal");
-const profileEditForm = profileEditModal.querySelector(".js-modal-form");
+const profileEditForm = document.forms["profileModal"];
 const profileCloseModalButton = document.querySelector(
   ".js-profile-close-button"
 );

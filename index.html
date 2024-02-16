@@ -65,7 +65,7 @@
 
         <section class="gallery">
           <ul class="gallery__cards js-card-list">
-            <template class="card__template js-card-template">
+            <template class="js-card-template">
               <li class="card js-card-element">
                 <img alt="destination" class="card__image js-card-image" />
                 <div class="card__info">
@@ -99,7 +99,11 @@
           ></button>
           <p class="modal__title">Edit profile</p>
 
-          <form action="#" class="modal__form js-modal-form">
+          <form
+            action="#"
+            class="modal__form js-modal-form"
+            name="profileModal"
+          >
             <fieldset class="modal__fieldset">
               <label for="full-name" class="modal__label"></label>
               <input
