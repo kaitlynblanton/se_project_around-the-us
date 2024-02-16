@@ -18,10 +18,10 @@ By using <code>flexgrid</code>, the elements are displayed correctly across diff
 
 ### Plans for Improvement
 
-- Improve interactivity of the website by adding the ability to edit the profile, add your own post, and like existing posts.
-- Improve usability of the website by allowing users to add a small description of their destination.
 - Improve accessiblity by allowing a user to switch between light and dark mode.
-- Improve aesthetics by creating a smoother transition between different screen widths.
+- Improve user experience by creating a smoother transition between different screen widths.
+- Improve interactivity by adding the ability to edit the profile, add your own post, and like existing posts.
+- Improve user interface by allowing users to change their profile picture & add a small description of their destination.
 
 ### 🔗 [Live Link](https://kaitlynblanton.github.io/se_project_around-the-us/)
 
