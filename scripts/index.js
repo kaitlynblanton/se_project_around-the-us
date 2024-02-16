@@ -30,16 +30,13 @@ const initialCards = [
   },
 ];
 
-/* ELEMENTS FOR EDIT FORM MODAL */
+/* EDIT FORM MODAL ELEMENTS */
 
 const profileEditButton = document.querySelector(".js-profile-edit-button");
 const profileEditModal = document.querySelector(".js-edit-profile-modal");
 const profileEditForm = profileEditModal.querySelector(".js-modal-form");
 const profileCloseModalButton = document.querySelector(
   ".js-profile-close-button"
-);
-const profileEditFormSubmit = document.querySelector(
-  ".js-profile-submit-button"
 );
 const profileInputName = document.querySelector(".js-modal-input-name");
 const profileInputDescription = document.querySelector(
@@ -48,7 +45,7 @@ const profileInputDescription = document.querySelector(
 const profileName = document.querySelector(".js-profile-name");
 const profileDescription = document.querySelector(".js-profile-description");
 
-/* OPEN / CLOSE EDIT FORM MODAL */
+/* EDIT FORM MODAL FUNCTIONALITY */
 
 profileEditButton.addEventListener("click", () => {
   profileInputName.value = profileName.textContent;
@@ -71,3 +68,28 @@ function handleProfileFormSubmit(event) {
 }
 
 profileEditForm.addEventListener("submit", handleProfileFormSubmit);
+
+/* GALLERY ELEMENTS */
+
+const cardTemplate =
+  document.querySelector(".js-card-template").content.firstElementChild;
+const cardList = document.querySelector(".js-card-list");
+
+/* GALLERY FUNCTIONALITY */
+
+function getCardElement(cardData) {
+  const cardElement = cardTemplate.cloneNode(true);
+  const cardElementImage = cardElement.querySelector(".js-card-image");
+  const cardElementTitle = cardElement.querySelector(".js-card-title");
+
+  cardElementImage.src = cardData.link;
+  cardElementImage.alt = cardData.name;
+  cardElementTitle.textContent = cardData.name;
+
+  return cardElement;
+}
+
+initialCards.forEach((cardData) => {
+  const cardElement = getCardElement(cardData);
+  cardList.append(cardElement);
+});
